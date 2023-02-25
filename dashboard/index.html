@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/main.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <main>
+        <div class="graphs">
+            <div class="card first">
+                <h2>NPS geral</h2>
+
+                <div class="graphs-icon">
+                    <i class="fa-regular fa-face-laugh-beam"></i>
+                    <p>Exelente!</p>
+                </div>
+                
+                <div class="stats">
+                    <span>NPS Score 75</span>
+                </div>
+            </div>
+
+            <div class="card second">
+                <h2>Vendas fechadas</h2>
+
+                <div class="graph blue">
+                    <h2>70%</h2>     
+                    <p>alcançada</p>
+                </div>
+
+                <div class="stats">
+                    <p class="disabled">Esperado 100</p>
+                    <p class="active">Alcançado 70</p>
+                </div>
+            </div>
+
+            <div class="card third">
+                <h2>Meta mensal</h2>
+
+                <div class="graph pink">
+                    <h2>90%</h2>
+                    <p>alcançada</p>
+                </div>
+
+                <div class="stats">
+                    <p class="disabled">Esperado R$ 70K</p>
+                    <p class="active">Alcançado R$ 63K</p>
+                </div>
+            </div>
+        </div>
+        <div class="results">
+            <h3>Vendas por dia da semana</h3>
+            <div class="results-content">
+                <div class="results-days">
+                    <div class="week">
+                        <p>
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.5 0.5L12.9952 11.75H0.00480938L6.5 0.5Z" fill="url(#paint0_linear_201_16)"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_201_16" x1="6.5" y1="0.5" x2="6.5" y2="15.5" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#81FBB8"/>
+                                <stop offset="1" stop-color="#28C76F"/>
+                                </linearGradient>
+                                </defs>
+                                
+                            </svg>
+                            Dia com mais vendas
+                        </p>
+                        <h2>quarta-feira</h2>
+                    </div>
+                    <div class="week">
+                        <p>
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.5 11.5L12.9952 0.25H0.00480938L6.5 11.5Z" fill="url(#paint0_linear_201_24)"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_201_24" x1="6.5" y1="11.5" x2="6.5" y2="-3.5" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#EA5455"/>
+                                <stop offset="1" stop-color="#FEB692"/>
+                                </linearGradient>
+                                </defs>
+                            </svg>
+                                
+                            Dia com menos vendas
+                        </p>
+                        <h2>domingo</h2>
+                    </div>
+                </div>
+                <div class="results-graph">
+                    <div class="day dom">dom</div>
+                    <div class="day seg">seg</div>
+                    <div class="day ter">ter</div>
+                    <div class="day qua">qua</div>
+                    <div class="day qui">qui</div>
+                    <div class="day sex">sex</div>
+                    <div class="day sab">sab</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://kit.fontawesome.com/7fe5be44e1.js" crossorigin="anonymous"></script>
+</body>
+</html>

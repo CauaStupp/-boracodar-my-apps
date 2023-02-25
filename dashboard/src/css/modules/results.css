@@ -1,0 +1,113 @@
+.results {
+    background-color: var(--card-color);
+    box-shadow: 3px 4px 26px rgba(0, 0, 0, 0.25);
+    padding: 3rem 4.8rem;
+    border-radius: 0.6rem;
+    width: 100%;
+}
+
+.results h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+}
+
+.results-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.week:first-child {
+    margin-bottom: 3.2rem;
+}
+
+.week p {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+}
+
+.week p svg {
+    margin-right: 0.4rem;
+}
+
+.week h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.results-graph {
+    border-top: 5px solid #4A4556;
+    height: 90px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.results-graph .day {
+    font-size: 1.2rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.results-graph .day::before {
+    content: '';
+    background: linear-gradient(180deg, #90F7EC 0%, #32CCBC 100%);
+    width: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+}
+
+.results-graph .day.dom::before {
+    height: 40px;
+    top: -45px;
+}
+
+.results-graph .day.seg::before {
+    height: 115px;
+    top: -120px;
+}
+
+.results-graph .day.ter::before {
+    height: 75px;
+    top: -80px;
+}
+
+.results-graph .day.qua::before {
+    height: 160px;
+    top: -165px;
+}
+
+.results-graph .day.qui::before {
+    height: 130px;
+    top: -135px;
+}
+
+.results-graph .day.sex::before {
+    height: 120px;
+    top: -125px;
+}
+
+.results-graph .day.sab::before {
+    height: 70px;
+    top: -75px;
+}
+
+
+
+
+@media (max-width: 980px) {
+    .results-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .results-days {
+        margin-bottom: 15rem;
+    }
+}
