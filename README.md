@@ -1,4 +1,4 @@
-# boracodar-my-apps
-Desafios do #boracodar da Rocketseat
+<h1 align="center">#BORACODAR APPS</h1>
 
-# Usei todos projetos do #boracodar
+## :computer: Todos desafios
+
